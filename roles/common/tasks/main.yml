@@ -1,0 +1,6 @@
+- hosts: servers
+  sudo: yes
+  user: vagrant
+  tasks:
+    - name: Update Package
+      apt: update_cache=yes
