@@ -1,0 +1,6 @@
+- hosts: servers
+  sudo: yes
+  user: vagrant
+  tasks:
+    - name: Install Setup tools
+      apt: name=python-setuptools state=latest
