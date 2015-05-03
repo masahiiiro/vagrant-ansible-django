@@ -1,0 +1,6 @@
+- hosts: servers
+  sudo: yes
+  user: vagrant
+  tasks:
+    - name: Install nginx
+      apt: name=nginx state=latest
