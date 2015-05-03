@@ -1,0 +1,6 @@
+- hosts: servers
+  sudo: yes
+  user: vagrant
+  tasks:
+    - name: Install gunicorn
+      pip: name=gunicorn state=latest
