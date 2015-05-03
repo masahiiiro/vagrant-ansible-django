@@ -4,3 +4,6 @@
   tasks:
     - name: Install Setup tools
       apt: name=python-setuptools state=latest
+
+    - name: Install pip
+      apt: name=python-pip state=latest
