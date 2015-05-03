@@ -1,0 +1,6 @@
+- hosts: servers
+  sudo: yes
+  user: vagrant
+  tasks:
+    - name: Install Django
+      apt: name=python-django state=latest
