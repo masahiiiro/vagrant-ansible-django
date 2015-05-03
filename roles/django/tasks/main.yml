@@ -4,3 +4,6 @@
   tasks:
     - name: Install Django
       apt: name=python-django state=latest
+
+    - name: Create new django project
+      command: /usr/bin/django-admin startproject myapp chdir=/vagrant/src/
